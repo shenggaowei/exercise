@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script  src="https://is.muni.cz/do/rect/el/storage/utils/svgedit/canvg/canvg.js?lang=en"></script> 
+<script  src="test.js" type="text/javascript"></script>
+</head>
+<body>
+<textarea id="container" style="min-width:300px;height:100px"></textarea>
+<input type="button" value="转图片" onClick="convert()" />
+<canvas id="canvasId" ></canvas>
+<image id="image"/>
+<script type="text/javascript">
+function convert(){
+    var svgHtml=$("#container").val();
+    var canvasId=document.getElementById("canvasId");
+    canvg(canvasId,svgHtml);
+ }
+</script>

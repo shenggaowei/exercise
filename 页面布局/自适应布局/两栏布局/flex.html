@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex</title>
+</head>
+<style>
+  .float-box {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .aside {
+    width: 100px;
+    height: 150px;
+    background: #f66;
+    flex-shrink: 0;
+  }
+
+  .main {
+    height: 200px;
+    background: #fcc;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+
+  /* .main .child {
+    width: 1000px;
+  } */
+</style>
+
+<body>
+  <div class="float-box">
+    <div class="aside"></div>
+    <div class="main">
+      <div class="child"></div>
+    </div>
+  </div>
+</body>
+
+</html>

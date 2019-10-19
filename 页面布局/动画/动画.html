@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes dh {
+            0% {
+                background: red;
+                left: 100px;
+            }
+
+            25% {
+                background: yellow;
+                left: 350px;
+                top: 50px;
+            }
+
+            50% {
+                background: blue;
+                left: 400px;
+            }
+
+            100% {
+                background: green;
+                left: 600px;
+            }
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background: orange;
+            position: absolute;
+            animation: dh 3s ease infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+</body>
+
+</html>

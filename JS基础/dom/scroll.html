@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 500px;
+            width: 800px;
+            background: #ccc;
+        }
+
+        .container {
+            height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+<script>
+    let oBox = document.querySelector('.box');
+    let oContainer = document.querySelector('.container')
+    let { scrollHeight, scrollTop, clientHeight } = oContainer;
+    oContainer.addEventListener('scroll', function () {
+        let { scrollHeight, scrollTop, clientHeight } = this;
+        console.log(scrollHeight, clientHeight, scrollTop);
+        if (clientHeight + scrollTop >= scrollHeight) {
+            alert('到底了');
+            this.scrollTop = 0;
+        }
+    })
+    console.log('scrollHeight', scrollHeight);
+    console.log('clientHeight', clientHeight)
+</script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: yellow;
+    border-radius: 50%;
+    bottom: 0;
+  }
+</style>
+
+<body>
+  <button onClick="handleClick()">点我会有变化啊</button>
+  <div class="box"></div>
+  <script>
+    Object.prototype.on = function (event, callback) {
+      //listen
+      this.__eventCache = this.__eventCache || {};
+      this.__eventCache[event] = callback;
+      //this return无所谓
+      return this;
+    };
+    Object.prototype.fire = function (event, data) {
+      //emit
+      this.__eventCache &&
+        this.__eventCache[event] &&
+        this.__eventCache[event](data);
+    };
+    var sd = {};
+    sd.on("as", function (d) {
+      console.log(5487 + d);
+    });
+    sd.fire("as", 324);
+  </script>
+</body>
+
+</html>

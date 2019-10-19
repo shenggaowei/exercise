@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="width: 100%;height:2000px;overflow-y: auto">
+  </div>
+  <script>
+    /**
+     * 函数防抖
+     * 思想：当最后一个事件触发完成后一段时间内，执行相应的回调函数。
+     * 1 事件触发，开启一个超时调用计时器。
+     * 2 判断，在这个时间段内，如果再次触发事件，则清除掉上次的事件，执行本次的超时计时器。
+     * 3 计时器的时间到了，执行函数。如果有事件触发，循环1。否则无操作。
+     * 
+     * 类比
+     * 1 定闹钟。第一次定了一定时长的闹钟，在这个时间段内，如果再次定闹钟，则会把之前锁定的取消，执行刚刚定的闹钟。
+     * 
+     * 函数节流和函数防抖的区别
+     * 1 在等待超时计时器回调函数执行的这个时间段内，对触发的事件的处理不同。
+     *   函数节流只执行在当前时间段内第一次触发事件的那个超时调用。在时间段内再次触发事件，将不予执行超时调用。只有上次回调执行完了，才会继续执行事件。
+     *   函数防抖是执行事件最后一次所触发的超时调用。前面触发的会被清除掉。
+     **/
+
+    this.timer = null;
+
+    window.addEventListener('scroll', function () {
+      if (this.timer) {
+        clearTimeout(this.timer);
+      }
+      this.timer = setTimeout(function () {
+        console.log('函数防抖');
+      }, 300)
+    })
+  </script>
+</body>
+
+</html>

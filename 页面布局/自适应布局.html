@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background: #338844;
+            height: 50px;
+        }
+
+        .left {
+            height: 42px;
+            flex: 1;
+            /*存在剩余空间，元素自动放大*/
+            background-color: red;
+        }
+
+        .right {
+            height: 42px;
+            width: 100px;
+            margin-left: 20px;
+            flex-shrink: 1;
+            background: #e4b382;
+        }
+
+        .position-box {
+            width: 100%;
+            height: 40px;
+            position: relative;
+            background-color: yellow;
+        }
+
+        .position-right {
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: green;
+        }
+
+        .position-left {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            right: 50px;
+            bottom: 5px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="left">
+
+    </div>
+    <div class="right"></div>
+</div>
+
+<div class="position-box">
+    <div class="position-left"></div>
+    <div class="position-right"></div>
+</div>
+<script>
+  let a = [
+    {
+      label: '1',
+      value: '1',
+      children: [
+        {
+          label: '1.1',
+          value: '1.1',
+          children: [
+            {
+              label: '1.1.1',
+              value: '1.1.1',
+              children: [
+                {
+                  label: '1.1.1.1',
+                  value: '1.1.1.1',
+                  children: [
+                    {
+                      label: '1.1.1.1.1',
+                      value: '1.1.1.1.1',
+
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      label: '2',
+      value: '2',
+      children: [
+        {
+          label: '2.1',
+          value: '2.1'
+        }
+      ]
+    }
+  ];
+
+  let b = '1|1.1|1.1.1|1.1.1.1';
+  // let item = b.split('|').reduce((cur, next) => {
+  //   return cur.find(o => o.value === next).children;
+  // }, a);
+
+  let p = b.split('|');
+
+  function f(t) {
+    for (let i = 0; i < t.length; i++) {
+      for (let j = 0; j < p.length; j++) {
+        if (t[i].value == p[j] && j != p.length - 1) {
+          return f(t[i].children);
+        } else if (t[i].value == p[j] && j == p.length - 1) {
+          return t[i].children;
+        }
+      }
+    }
+  }
+
+</script>
+</body>
+</html>

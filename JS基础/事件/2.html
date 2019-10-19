@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=ß, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./event.js"></script>
+</head>
+
+<body>
+  <input type="text">
+  <a href="https://www.baidu.com">ddd</a>
+  <script>
+    // eventUtil.addHandler(window, 'beforeunload', function (event) {
+    //   event = eventUtil.getEvent(event);
+    //   var message = '关闭提示';
+    //   event.returnValue = message;
+    //   return message
+    // })
+
+    let showCount = 0
+    eventUtil.addHandler(window, 'load', function (e) {
+      alert('loaded complete');
+    })
+
+    eventUtil.addHandler(window, 'pageshow', function (e) {
+      showCount++;
+      console.log(showCount, e.persisted);
+    })
+  </script>
+</body>
+
+</html>

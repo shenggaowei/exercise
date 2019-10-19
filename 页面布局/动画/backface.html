@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            height: 140px;
+            width: 140px;
+            float: left;
+            margin-right: 10px
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background: orange;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .info {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            transform: rotateX(180deg);
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .box:hover {
+            transform: rotateX(180deg);
+            transform-style: preserve-3d;
+            transition-duration: 3s
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3458217718,1754724586&fm=26&gp=0.jpg"
+            alt="" />
+        <div class="info">我是皮卡丘1</div>
+    </div>
+    <div class="box">
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3458217718,1754724586&fm=26&gp=0.jpg"
+            alt="" />
+        <div class="info">我是皮卡丘2</div>
+    </div>
+    <div class="box">
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3458217718,1754724586&fm=26&gp=0.jpg"
+            alt="" />
+        <div class="info">我是皮卡丘3</div>
+    </div>
+    <div class="box">
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3458217718,1754724586&fm=26&gp=0.jpg"
+            alt="" />
+        <div class="info">我是皮卡丘4</div>
+    </div>
+    <div class="box">
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3458217718,1754724586&fm=26&gp=0.jpg"
+            alt="" />
+        <div class="info">我是皮卡丘5</div>
+    </div>
+
+</body>
+
+</html>

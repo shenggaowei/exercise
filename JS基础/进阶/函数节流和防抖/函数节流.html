@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+<div style="width: 100%;height: 2000px;overflow-y:auto;"></div>
+
+<body>
+  <script>
+    /**
+     * 函数节流
+     * 主要思想：确保在规定时间内，指定的函数只执行一次。
+     * 1 页面初始确定不能执行函数
+     * 2 第一次触发，没有timerId，确定能够执行函数。
+     * 3 执行超时调用函数，取得超时id。回调函数被推进一个任务队列中，在指定的时间后执行。此时，确定不能再执行函数。
+     * 4 队列中的函数执行完毕，确定能够再次执行函数。如果再次触发事件，则循环3，4。
+     *
+     *
+     * 类比：
+     * 定闹钟，定三钟后的闹钟。
+     * 第一次定，检测闹钟里面没定时间，定一次
+     * 然后在这时间段之内，不允许再去定闹钟，即在这个时间段内所定的闹钟都不算
+     * 当闹钟响了之后，允许你再去定洗一次闹钟。
+     * **/
+    // var canPushToQueue = false;
+    // window.addEventListener("scroll", function () {
+    //   if (!this.timer) {
+    //     canPushToQueue = true;
+    //   }
+
+    //   if (canPushToQueue) {
+    //     this.timer = setTimeout(function () {
+    //       console.log("函数节流");
+    //       canPushToQueue = true;
+    //     }, 300);
+    //     canPushToQueue = false;
+    //   }
+    // });
+
+    /**
+     * 改进
+     * 思路：页面初次load时实际上是可以执行回调的。判断初次进行不需要通过this.timer来进行判断。通过一个变量可进行通用解决
+     *
+     * 改进思想
+     * 1 页面初始化时，js执行队列为空，确定可以执行setTimeout函数，设置canPushToQueue为true。
+     * 2 程序读取setTimeout代码，在指定的时间后执行回调函数。此时不允许事件再次触发setTimeout事件，回调函数被推进一个任务队列中，在指定的时间后执行。
+     * 3 回调函数执行后，确定可以再次执行。canPushToQueue设置为true。
+     * 4 循环执行3，4
+     *
+     * 类比：
+     * 定闹钟，开始定一次。
+     * 然后在这时间段之内，不允许再去定闹钟，即在这个时间段内所定的闹钟都不算
+     * 当闹钟响了之后，允许你再去定洗一次闹钟。
+     * */
+    // var canPushToQueue = true;
+    // window.addEventListener("scroll", function () {
+    //   if (canPushToQueue) {
+    //     canPushToQueue = false;
+    //     setTimeout(function () {
+    //       console.log("函数节流");
+    //       canPushToQueue = true;
+    //     }, 300);
+    //   }
+    // });
+
+    function throttle(func, wait) {
+      let last = 0;
+      return function () {
+        let now = +new Date();
+        if (now - last > wait) {
+          func.apply(this, arguments)
+        }
+        last = +new Date
+      }
+    }
+
+    // window.addEventListener('scroll',
+    //   throttle((name) => {
+    //     console.log(name)
+    //   }, 10)
+    // )
+
+    function debounce(func, wait) {
+      let timer;
+      return function (...rest) {
+        if (timer) {
+          clearTimeout(timer);
+        }
+        timer = setTimeout(() => {
+          func.apply(this, rest)
+        }, wait)
+      }
+    }
+
+    window.addEventListener('scroll',
+      debounce((name) => {
+        console.log(name)
+      }, 200)
+    )
+  </script>
+</body>
+
+</html>

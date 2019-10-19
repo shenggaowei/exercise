@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box"></div>
+  <button class="btn">点我改变数据</button>
+</body>
+<script>
+  'use strict'
+  let info ={name:"山东"};
+  let oA = document.getElementsByClassName('box')[0];
+  let oBtn = document.getElementsByClassName('btn')[0];
+  // 用defineProperty方法创建属性 如果不指定
+  // 如果一个描述符不具有value,writable,get 和 set 任意一个关键字，那么它将被认为是一个数据描述符。如果一个描述符同时有(value或writable)和(get或set)关键字，将会产生一个异常。
+  Object.defineProperty(info,'title',{ 
+    enumerable:true,
+    get:function(){
+      return this.name
+    },
+    set:function(newVal){
+      console.log('setVal',newVal);
+      this.name = newVal;
+      oA.innerHTML = newVal;
+      return newVal
+    }
+  })
+  oA.innerHTML = info.title || '试试';
+  let count = 0;
+  oBtn.onclick = function(){
+    info.title = `变化了吧${count ++}`;
+    console.log(info,info.title)
+  }
+
+  let descriptor = Object.getOwnPropertyDescriptor(info,'title');
+  console.log(descriptor)
+
+  console.log(info)
+  // for(let key in info){
+  //   console.log(key)
+  // }
+ 
+</script>
+</html>

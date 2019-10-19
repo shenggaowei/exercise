@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./event.js"></script>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .mydiv {
+      background: green;
+    }
+
+    .menu {
+      visibility: hidden;
+      position: absolute;
+      background: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mydiv">点我</div>
+  <div class="menu">haha </div>
+</body>
+<script>
+  // let myDiv = document.getElementsByClassName('mydiv')[0];
+  // let myMenu = document.getElementsByClassName('menu')[0]
+  // eventUtil.addHandler(window, 'load', function (event) {
+  //   eventUtil.addHandler(myDiv, 'contextmenu', function (event) {
+  //     event = eventUtil.getEvent(event);
+  //     eventUtil.preventDefault(event);
+
+  //     myMenu.style.left = event.clientX + 'px';
+  //     myMenu.style.top = event.clientY + 'px';
+  //     myMenu.style.visibility = 'visible';
+  //   })
+
+  //   eventUtil.addHandler(document, 'click', function (e) {
+  //     myMenu.style.visibility = 'hidden';
+  //   })
+  // })
+
+
+  eventUtil.addHandler(window, 'beforeunload', function (event) {
+    event = eventUtil.getEvent(event);
+    var message = '关闭提示';
+    event.returnValue = message;
+    return message
+  })
+
+  // window.onbeforeunload = function (e) {
+  //   e = e || window.event;
+  //   // 兼容IE8和Firefox 4之前的版本
+  //   if (e) {
+  //     e.returnValue = '关闭提示';
+  //   }
+  //   // Chrome, Safari, Firefox 4+, Opera 12+ , IE 9+
+  //   return '关闭提示';
+  // };
+</script>
+
+</html>

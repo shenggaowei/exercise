@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  let promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('三秒过去了');
+    }, 3000);
+  });
+  promise1.then(data => {
+    console.log(data);
+  });
+
+  //promise.resolve返回一个promise对象,其then方法将value作为参数。如果value为一个promise对象，则then方法为value的then方法
+  let promise2 = Promise.resolve('kk');
+  promise2.then(data => {
+    console.log(data);
+  });
+
+  //promise.reject
+  //return a Promise Object that rejected with the given reason。返回一个promise对象其被rejected以相应的理由
+  let promise3 = Promise.reject('l love you');
+  promise3.then(data => {
+    console.log(data);
+  }).catch(data => {
+    console.log(data);
+  });
+
+</script>
+
+</body>
+</html>

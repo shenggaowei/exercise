@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .box {
+    width: 200px;
+    height: 400px;
+    background: yellow;
+    text-align: center;
+  }
+
+  .box .child {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .box .flag {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+</style>
+
+<body>
+  <div class="box">
+    <span class="flag"></span>
+    <img src="https://images2015.cnblogs.com/blog/315302/201704/315302-20170417105850790-1814593961.png"
+      class="child" />
+  </div>
+</body>
+
+1. span高度设置100%,确定他的基线是底部margin。父元素的基线也是底部margin。
+2. span 设置middle。span的纵向中心与父元素的基线+ 0.5x height 对齐。此时页面效果为父元素基线被迫上移，移动到了span的中部 - 0.5x height的位置。
+3. 左侧图片基线默认与父元素基线对齐，所以图片的底部与 span中线 - 0.5x height 距离对齐。给左侧图片设置 middle,图片的基线与父元素基线的 + 0.5x height的距离对齐。
+4. 此时两个元素的中线都对齐，所以在垂直方向上是对齐的。
+
+</html>

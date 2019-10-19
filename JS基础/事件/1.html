@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./event.js"></script>
+  <style>
+    .myDiv {
+      width: 100px;
+      height: 100px;
+      background: red;
+      visibility: hidden
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn" data-spm='jajaj'>点我</button>
+  <div class="myDiv"></div>
+</body>
+<script>
+  let oBtn = document.getElementsByClassName('btn')[0];
+
+  console.log(oBtn.getAttribute('data-spm'))
+  let handler = () => {
+    alert(222)
+  }
+
+  let info = throttle2(function (text) {
+    console.log(text);
+  }, 1000);
+
+  eventUtil.addHandler(oBtn, 'click', function (event) {
+    info('haha');
+  })
+
+  eventUtil.addHandler(window, 'load', function () {
+    var image = new Image();
+    eventUtil.addHandler(image, 'load', function () {
+      //alert('Image loaded');
+    })
+    document.body.appendChild(image);
+    image.src = 'https://www.baidu.com/img/jijiandong_fe814ef3a7b6710df2ee25b9d0181cef.gif';
+  });
+  eventUtil.addHandler(window, 'scroll', function (event) {
+    if (document.compatMode === 'CSS1Compat') {
+      console.log(document.documentElement.scrollTop);
+    } else {
+      console.log(document.body.scrollTop);
+    }
+  });
+
+  var div = document.getElementsByClassName('myDiv')[0];
+  eventUtil.addHandler(div, 'click', function (event) {
+    event = eventUtil.getEvent(event);
+    let {
+      pageX,
+      pageY
+    } = event;
+    if (pageX === undefined) {
+      pageX = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft)
+    }
+
+    if (pageY === undefined) {
+      pageY = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop)
+    }
+
+    console.log(pageX, pageY);
+  })
+
+  eventUtil.addHandler(div, 'mousedown', function (e) {
+    e = eventUtil.getEvent(e);
+    let button = eventUtil.getButton(e);
+    console.log('我当前点击的鼠标是', button);
+    console.log(event.keyCode);
+  });
+
+  // eventUtil.addHandler(document, 'mousewheel', function (event) {
+  //   event = eventUtil.getEvent(event);
+  //   let wheelDelta = eventUtil.getWheelDelta(event);
+  // })
+
+  console.log();
+
+  eventUtil.addHandler(document, 'keydown', function (event) {
+    event = eventUtil.getEvent(event);
+    let keyCode = event.keyCode;
+    console.log(event.keyCode)
+  })
+</script>
+
+</html>
