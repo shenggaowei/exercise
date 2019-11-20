@@ -1,0 +1,1140 @@
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+dddd
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+haahupstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
+upstream ahdefend {
+  server 127.0.0.1:18888;
+}
+
+server {
+  listen  80;
+  server_name  47.100.201.109 ahdefend.com;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Nginx-Proxy true;
+    proxy_pass http://ahdefend;
+    proxy_buffer_size 64k;
+    proxy_buffers 32 32k;
+    proxy_busy_buffers_size 128k;
+    proxy_redirect off;
+  }
+}
