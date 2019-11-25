@@ -3,16 +3,16 @@
 // 2 类型断言
 // 3 将一个对像赋值给了另一个变量
 
-interface LabelledValue {
+interface LabelledValue2 {
     label: string,
     name?: string,
     readonly age: number,
 
 }
 
-function printLabel(labelObj: LabelledValue) {
+function printLabels(labelObj: LabelledValue2) {
     console.log(labelObj.label);
 }
 
-printLabel({size: 10, label: 'size 10 object', age: 18} as LabelledValue);
+printLabels({size: 10, label: 'size 10 object', age: 18} as LabelledValue2);
 
