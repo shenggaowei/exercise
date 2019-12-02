@@ -55,10 +55,26 @@
     console.log(str3.match(null));       // 返回["null"]
  }
 
- {
+{
+    // 匹配url中的链接参数
      let str = 'http://syt.athene.dev.smartstudy.com:10086/toefl/msk/12.html?sliceId=3932&courseId=20'
      let reg = /sliceId=(\d+)&courseId=(\d+)/
-     let newStr = str.replace(reg,'sliceId=$2&courseId=$1');
-     console.log(newStr)
- }
+    //  let newStr = str.replace(reg,'sliceId=$2&courseId=$1');
+    // console.log(newStr)
+     let reg2 = /(?<=\?)[\w+&=]+/
+     let newStr2 = reg2.exec(str)
+     console.log(newStr2);
+}
+
+{
+    /**
+     * 思路：匹配 haha 和 xixi。必须是个组。
+     */
+    let str = '<img src="haha"/>'
+    let reg = /(?<=\<[img\s]*src=")[\w]+(?=")(?!=\s\/\>)/
+    let result = reg.exec(str)
+    let replaceStr = str.replace(reg,"www.baidu.com")
+    console.log(result)
+    console.log(replaceStr)
+}
 
