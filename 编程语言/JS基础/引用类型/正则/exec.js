@@ -5,7 +5,6 @@
     console.log(result);
 }
 
-
 {
     let text2 = 'cat, bat, sat, fat'
     let pattern2 = /.at/g

@@ -9,14 +9,9 @@
 
 // [^xyz] 匹配任何没有包含在括号中的字符
 {
-    let reg = /[^abc]/
+    let reg = /[^abc]{3}/
     let str = 'ffhop'
     let result = reg.exec(str)
-    console.log(reg.lastIndex)
-}
-
-// [\b] 匹配一个退格 backspace
-{
-
+    console.log(result)
 }
 

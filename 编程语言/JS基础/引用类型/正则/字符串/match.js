@@ -29,9 +29,6 @@
      let reg = /[A-E]/gi
      let result = str.match(reg)
      console.log(result)
-
-     // 将所有正则表达式匹配的结果返回为一个数组
-     result = [ 'A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e' ]
  }
 
  //使用match(),不传参数
