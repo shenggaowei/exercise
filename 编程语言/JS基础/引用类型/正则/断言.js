@@ -29,15 +29,15 @@
     console.log(case1[0])
 }
 
-// (?<=y)x 后行断言 y并不是匹配的一部分
+// (?<=y)x 后行断言 只有当x前面是y
 {
-    let reg = /(?<=Jack)Sprat/
-    let str = 'JackSprat Jack'
+    let reg = /(?<=Jack)\w+/
+    let str = 'JackSprat'
     let result = reg.exec(str)
     console.log(result)
 
     //case1 获取weishenggao 后面的 shenggao
-    let reg2 = /(?<=wei)(\w+)/
+    let reg2 = /(?<=wei)\w+/
     let name = 'weishenggao'
     let result2 = reg2.exec(name)
     console.log(result2[0])
@@ -88,4 +88,31 @@
 
 // 特殊字符
 {
+// x(?!y) 只有当x后面不是y时匹配y 正向否定查找
+{
+    // 匹配小数点后面的数值
+    let reg = /\d+(?!\.)/
+    let str = '3.14'
+    let result = reg.exec(str)
+    console.log(result)
+
+    //匹配 weishenggao sheng 后面的字符
+    let reg1 = /\w+(?!sheng)/
+    let str2 = 'weishenggao'
+    let result2 = reg1.exec(str2)
+    console.log(result2)
+}
+
+// (?<!x)y 只有当y前面不是x时才会匹配y  反向否定查找
+{
+    let reg = /(?<!-)\d+/
+    let result1 = reg.exec('-1')
+    let result2 = reg.exec('1')
+    console.log(result1,result2)
+
+    // wsg shenggao wei shenggao
+    let reg2 = /(?<!\s)\w+/
+    let str =  ' wsg shenggao wei shenggao'
+    let result3 = reg2.exec(str)
+    console.log(result3)
 }
