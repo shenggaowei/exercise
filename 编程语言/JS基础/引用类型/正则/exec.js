@@ -1,6 +1,6 @@
 {
     let text = 'cat, bat, sat, fat'
-    let pattern1 = /.at/
+    let pattern1 = /([a-zat,\s])*/g
     let result = pattern1.exec(text)
     console.log(result);
 }

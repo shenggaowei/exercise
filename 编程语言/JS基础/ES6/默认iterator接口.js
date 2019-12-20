@@ -150,3 +150,15 @@
         console.log(value)
     }
 }
+
+{
+    // 用while循环遍历iterator数据结构
+   let a = [1,2,3,4,5,6];
+   let it = a[Symbol.iterator]();
+   let info = it.next()
+   while(!info.done){
+       let value = info.value;
+       info = it.next()
+       console.log(value)
+   }
+}
