@@ -33,3 +33,37 @@
       console.log(b.next(13).value) // 13 + 24 + 5 = 42 第二个yield返回值为13，即z为13，
 }
 
+{
+    function* dataConsumer() {
+        console.log('Started');
+        console.log(`1. ${yield}`);
+        console.log(`2. ${yield}`);
+        return 'result';
+      }
+      
+      let genObj = dataConsumer();
+      genObj.next();
+      // Started
+      genObj.next('a')
+      // 1. a
+      genObj.next('b')
+      // 2. b
+}
+
+{
+    function wrapper(generatorFunction){
+        return function(...rest){
+            let generatorObj = generatorFunction(...rest)
+            generatorObj.next()
+            return generatorObj
+        }
+    }
+    let wrapperFunction = wrapper(function* (){
+        console.log('firstInput'+ (yield))
+        console.log('secondInput' + (yield))
+        return 'done'
+    })
+    wrapperFunction().next('shenggao')
+    wrapperFunction().next('haha')
+}
+
