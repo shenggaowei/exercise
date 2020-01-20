@@ -30,4 +30,4 @@ function run(generator){
     next()
 }
 
-run(generator)
+run(generator);
