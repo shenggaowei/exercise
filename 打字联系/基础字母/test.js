@@ -1,4 +1,8 @@
-let str = 'abcdefg';
+// A B C D E F G/H I J K L M N/O P Q R S T /U V W X Y Z
+let str1 = 'abcdefg';
+let str2 = 'hijklmn';
+let str3 = 'opqrst';
+let str4 = 'uvwxyz'
 function permutate(str) {
     var result=[];
     if(str.length==1){
@@ -14,5 +18,5 @@ function permutate(str) {
         return result;
     }  
 }
-let result = permutate(str)
-console.log(result.join('\n'));
+let result = permutate(str4)
+console.log(result.join('\n')); 

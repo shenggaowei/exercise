@@ -53,8 +53,8 @@ cdeabfg cdeabfg cdeabfg
 cdebafg cdebafg cdebafg cdebafg cdebafg cdebafg cdebafg cdebafg cdebafg abcdefg abcdefg abcdefg 
 
 cdebfag cdebfag cdebfag cdebfag
-cdebfga
-acdefbg acdefbg
+cdebfga cdebfga cdebfga cdebfga
+acdefbg acdefbg acdefbg 
 cadefbg cadegbg
 cdaefbg cdaefbg
 cdeafbg
