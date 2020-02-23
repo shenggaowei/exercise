@@ -15,11 +15,11 @@ wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvxyuz wvx
 wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu wvxyzu 
 
 // 第三步
-uwxvyz
-wuxvyz
-wxuvyz
-wxvuyz
-wxvyuz
+uwxvyz uwxyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz
+wuxvyz wuxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz uwxvyz 
+wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz 
+wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz wxuvyz 
+wxvyuz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz wxvuyz
 wxvyzu
 
 // 第四步
