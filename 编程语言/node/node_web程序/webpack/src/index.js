@@ -14,7 +14,7 @@ async function testshenggao(){
  })
 
 function RenderApp(){
-    return <div>hello world 升高</div>
+    return <div>hello world</div>
 }
 
 ReactDom.render(<RenderApp />, document.getElementById('root'))
