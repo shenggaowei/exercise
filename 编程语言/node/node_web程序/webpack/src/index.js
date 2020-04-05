@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
+import img from './images/paypal.png'
+import './index.scss'
+
 async function testshenggao(){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
@@ -14,7 +17,12 @@ async function testshenggao(){
  })
 
 function RenderApp(){
-    return <div>hello world</div>
+    return <div className='title-container'>
+        <img src={img} />
+        <p className='title web-font'>
+        我是升高我是升高我是升高我是升高我是升高我是升高我是升高我是升高我是升高我是升高
+        </p>
+    </div>
 }
 
 ReactDom.render(<RenderApp />, document.getElementById('root'))
