@@ -2,6 +2,7 @@ logs/
 .logs/
 
 build/
+dist/
 .idea/
 node_modules/
 *.swp
