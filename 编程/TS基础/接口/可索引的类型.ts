@@ -4,7 +4,7 @@
  */
 
 interface StringArray {
-    [index: number]: string
+  [index: number]: string
 }
 
 let myArray: StringArray;
@@ -18,9 +18,9 @@ let myStr: string = myArray[0];
  * 访问 name (本身为 string 类型) 属性时，返回 string 类型。
  */
 interface NumberDictionary {
-    [index: string]: number | string;
-    length: number;
-    name: string
+  [index: string]: number | string;
+  length: number;
+  name: string
 }
 
 /**
@@ -28,7 +28,7 @@ interface NumberDictionary {
  * number方式的索引 返回一个 string 类型。
  */
 interface ReadOnlyArrayString {
-    readonly [index: number]: string;
+  readonly [index: number]: string;
 }
 
 let myArray2: ReadOnlyArrayString = ['ha', 'heh'];
