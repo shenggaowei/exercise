@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svga</title>
+  <script src="https://cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js"></script>
+  <style>
+    #demoCanvas{
+      width: 400px;
+      height: 400px;
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div id="demoCanvas"></div>
+</body>
+<script>
+  var player = new SVGA.Player('#demoCanvas');
+  var parser = new SVGA.Parser('#demoCanvas');
+  parser.load('rose_2.0.0.svga', function(videoItem) {
+      player.setVideoItem(videoItem);
+      player.startAnimation();
+  })
+  
+</script>
+</html>
