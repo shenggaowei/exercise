@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>path</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 500px; height: 500px">
+    <path id="lineAB" d="M 100 350 l 150 -300" stroke="red"
+    stroke-width="3" fill="none" />
+    <path id="lineBC" d="M 250 50 l 150 300" stroke="red"
+    stroke-width="3" fill="none" />
+    <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+    fill="none" />
+    <path d="M 100 350 q 150 -300 300 0" stroke="blue"
+    stroke-width="5" fill="none" />
+    <!-- Mark relevant points -->
+    <g stroke="black" stroke-width="3" fill="black">
+      <circle id="pointA" cx="100" cy="350" r="3" />
+      <circle id="pointB" cx="250" cy="50" r="3" />
+      <circle id="pointC" cx="400" cy="350" r="3" />
+    </g>
+    <!-- Label the points -->
+    <g font-size="30" font="sans-serif" fill="black" stroke="none"
+    text-anchor="middle">
+      <text x="100" y="350" dx="-30">A</text>
+      <text x="250" y="50" dy="-10">B</text>
+      <text x="400" y="350" dx="30">C</text>
+    </g>
+  </svg>
+
+
+
+  <svg width="1660" height="825" xmlns="http://www.w3.org/2000/svg">
+    <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+    <g>
+     <title>background</title>
+     <rect fill="#fff" id="canvas_background" height="827" width="1662" y="-1" x="-1"/>
+     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+     </g>
+    </g>
+    <g>
+     <title>Layer 1</title>
+     <rect id="svg_1" height="172" width="258" y="123.953125" x="139.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+     <ellipse ry="55" rx="94.5" id="svg_2" cy="214.953125" cx="278" stroke-width="1.5" stroke="#000" fill="#fff"/>
+     <path id="svg_3" d="m65.5,78.953125c464,193 418,196 417.5,195.046875c0.5,0.953125 -229.5,161.953125 -229.5,161.953125c0,0 29,-370 28.5,-370.953125c0.5,0.953125 250.5,34.953125 251.5,34.953125c1,0 -376,297 -376.5,296.046875c0.5,0.953125 -555.5,-510.046875 -91.5,-317.046875z" stroke-width="1.5" stroke="#000" fill="#fff"/>
+    </g>
+   </svg>
+
+   <p>复杂的图形建议用svg编辑器来画</p>
+</body>
+</html>

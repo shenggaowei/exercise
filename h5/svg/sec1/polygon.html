@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多边形</title>
+</head>
+<body>
+  <p>一 point 定义每个角的x和y坐标， 每一组以 “,” 分开，各个角之间用空格隔开</p>
+  <svg height="210" width="500">
+    <polygon points="200,10 250,190 160,210"
+    style="fill:lime;stroke:purple;stroke-width:1"/>
+  </svg>
+
+  <p>二 多边形</p>
+  <svg height="250" width="500">
+    <polygon points="220,10 300,210 170,250 123,234" style="fill:lime;stroke:purple;stroke-width:1" />
+  </svg>
+
+  <p>三 多边形</p>
+  <svg height="210" width="500">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;stroke-width:1;fill-rule:nonzero;" />
+  </svg>
+
+  <p>四 多边形</p>
+  <svg height="210" width="500">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;stroke-width:1;fill-rule:evenodd;" />
+  </svg>
+  <p>fill-rule</p>
+  <b>指定使用哪一种算法去判断画布上某区域是否属于该图形“内部”(内部区域将会被填充)</b>
+  <li>nonzero(非0原则)</li>
+  <li>evenodd 奇偶原则。奇内偶外</li>
+</body>
+</html>

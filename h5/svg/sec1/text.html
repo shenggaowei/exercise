@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text</title>
+</head>
+<body>
+  <p>1 基础字符</p>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <text x="0" y="15" fill="red">I love SVG</text>
+  </svg>
+
+  <p>2 旋转字符</p>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <text x="0" y="15" fill="red" transform="rotate(30 20,40)">I love SVG</text>
+  </svg>
+
+  <p>3 路径字符</p>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+   <defs>
+    <path id="path1" d="M75,20 a1,1 0 0,0 100,0" />
+  </defs>
+  <text x="10" y="100" style="fill:red;">
+    <textPath xlink:href="#path1">I love SVG I love SVG</textPath>
+  </text>
+</svg>
+
+</body>
+</html>
