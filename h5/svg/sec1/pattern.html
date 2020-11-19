@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pattern</title>
+</head>
+<body>
+  <p>patternUnits="userSpaceOnUse"表示 pattern 的宽度和长度是实际的像素值。然后，指定这个模式去填充下面的矩形。</p>
+  <p>patternUnits="objectBoundingBox" 表示 pattern 的宽度和长度是实际的 百分比。然后，按照指定的百分比去填充图形</p>
+
+  <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- All geometry properties are relative to the current user space -->
+    <pattern id="p1" x="12.5" y="12.5" width="25" height="25"
+             patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="10" />
+    </pattern>
+   
+    <!-- All geometry properties are relative to the target bounding box -->
+    <pattern id="p2" x=".125" y=".125" width=".25" height=".25"
+             patternUnits="objectBoundingBox">
+      <circle cx="10" cy="10" r="10" />
+    </pattern>
+   
+    <!-- Left square with user space tiles -->
+    <rect x="10"  y="10" width="80" height="80"
+    stroke="red"
+          fill="url(#p1)" />
+   
+    <!-- Right square with bounding box tiles -->
+    <rect x="110" y="10" width="80" height="80"
+          fill="url(#p2)" />
+  </svg>
+</body>
+</html>

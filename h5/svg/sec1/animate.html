@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animate</title>
+</head>
+<body>
+  <li>
+    attributeName：发生动画效果的属性名。
+    from：单次动画的初始值。
+    to：单次动画的结束值。
+    dur：单次动画的持续时间。
+    repeatCount：动画的循环模式。
+  </li>
+<svg width="500px" height="500px">
+  <rect x="0" y="0" width="100" height="100" fill="#feac5e">
+    <animate attributeName="x" from="0" to="500" dur="2s" repeatCount="indefinite" />
+  </rect>
+</svg>
+
+?????????
+<p>animate 标签对 css 的 transform 属性不起作用，如果需要变形，就要使用 animateTransform 标签</p>
+<svg width="500px" height="500px">
+  <rect x="250" y="250" width="50" height="50" fill="#4bc0c8">
+    <animateTransform attributeName="transform" type="rotate" begin="0s" dur="10s" from="0 200 200" to="360 200 400" repeatCount="indefinite" />
+  </rect>
+</svg>
+
+</body>
+</html>
