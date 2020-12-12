@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>defs 标签</title>
+</head>
+<body>
+  <p>标签用于自定义形状，它内部的代码不会显示，仅供引用。</p>
+  <svg width="300" height="100">
+    <defs>
+      <g id="myCircle">
+        <text x="25" y="20">圆形</text>
+        <circle cx="50" cy="50" r="20"/>
+      </g>
+    </defs>
+  
+    <use href="#myCircle" x="0" y="0" />
+    <use href="#myCircle" x="100" y="0" fill="blue" />
+    <use href="#myCircle" x="200" y="0" fill="white" stroke="blue" />
+  </svg>
+</body>
+</html>
