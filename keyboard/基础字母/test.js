@@ -2,7 +2,7 @@
 let str1 = 'abcdefg';
 let str2 = 'hijklmn';
 let str3 = 'opqrst';
-let str4 = 'uvwxyz'
+let str4 = ",.<>/?;':\""
 function permutate(str) {
     var result=[];
     if(str.length==1){
