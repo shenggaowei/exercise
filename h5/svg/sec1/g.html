@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>g 标签(group)</title>
 </head>
+
 <body>
   <p> g 标签用于将多个形状组成一个组（group），方便复用。</p>
   <svg width="300" height="100">
     <g id="myCircle">
       <text x="25" y="20">圆形</text>
-      <circle cx="50" cy="50" r="20"/>
+      <circle cx="50" cy="50" r="20" />
     </g>
-  
+
     <use href="#myCircle" x="100" y="0" fill="blue" />
     <use href="#myCircle" x="200" y="0" fill="white" stroke="blue" />
   </svg>
 </body>
+
 </html>

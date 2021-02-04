@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>魔幻矩形</title>
+</head>
+
+<body>
+  <canvas id="canvas" width="600" height="600">
+    不支持
+  </canvas>
+</body>
+
+<script>
+  let canvas = document.querySelector("#canvas");
+  let context = canvas.getContext('2d');
+
+  function drawRect(context, x, y, width, height, strokeColor = 'black') {
+    context.beginPath();
+    context.rect(x, y, width, height);
+    context.closePath();
+
+    context.strokeStyle = strokeColor;
+    context.lineWidth = 5;
+
+    context.stroke();
+  }
+
+  // 魔幻折线图
+  function generateRects(context) {
+    const num = 600 / 5 / 2;
+    for (let i = 0; i < num; i++) {
+      drawRect(context, 0 + 10 * i, 0 + 10 * i, 595 - 10 * i, 595 - 10 * i, 'black');
+      drawRect(context, 5 + 10 * i, 5 + 10 * i, 590 - 10 * i, 590 - 10 * i, '#fff');
+    }
+  }
+
+  generateRects(context);
+
+</script>
+
+</html>

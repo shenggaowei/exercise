@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>长方形</title>
+</head>
+
+<body>
+  <canvas id="canvas" style="border: 1px solid #ccc;">
+    不支持
+  </canvas>
+</body>
+<script>
+  let canvas = document.querySelector('#canvas');
+  canvas.width = 600;
+  canvas.height = 600;
+  let context = canvas.getContext('2d');
+
+  // 上边线
+  context.beginPath();
+  context.moveTo(50, 50);
+  context.lineTo(200, 50);
+  context.lineTo(200, 100);
+  context.lineTo(50, 100);
+  // context.lineTo(50, 50);
+  context.closePath();
+
+  context.strokeStyle = "red";
+  context.lineWidth = 5;
+  context.stroke();
+
+</script>
+
+</html>

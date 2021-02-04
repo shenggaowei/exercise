@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>基础的Canvas</title>
+</head>
+
+<body>
+  <div id="canvas-warp">
+    <canvas id="canvas" style="border: 1px solid #aaaaaa; display: block; margin: 50px auto;" width="800" height="600">
+      你的浏览器不支持 canvas, 快点换吧
+    </canvas>
+  </div>
+</body>
+<script>
+  let canvas = document.querySelector('#canvas');
+  let context = canvas.getContext('2d');
+  context.lineWidth = 5;
+  context.strokeStyle = "#d00";
+  context.moveTo(100, 100);
+  context.lineTo(600, 600);
+  context.stroke();
+</script>
+
+</html>
