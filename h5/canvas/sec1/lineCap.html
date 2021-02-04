@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数封装长方形</title>
+</head>
+
+<body>
+  <canvas id="canvas" style="border: 1px solid #ccc" width="600" height="600">
+    不支持
+  </canvas>
+</body>
+
+<script>
+  let canvas = document.querySelector("#canvas");
+  let context = canvas.getContext('2d');
+
+  // square 两端是以一半线宽为宽的矩形
+  // round 以线宽为直径的半圆
+  // butt 默认值
+  context.beginPath();
+  context.moveTo(50, 50);
+  context.lineTo(100, 50);
+  context.lineCap = 'square';
+  context.strokeStyle = "red";
+  context.lineWidth = 10;
+  context.stroke();
+
+
+  context.beginPath();
+  context.moveTo(50, 50);
+  context.lineTo(50, 100);
+  context.strokeStyle = "black";
+  context.lineWidth = 1;
+  context.stroke();
+
+  context.beginPath();
+  context.moveTo(100, 50);
+  context.lineTo(100, 100);
+  context.strokeStyle = "black";
+  context.lineWidth = 1;
+  context.stroke();
+
+</script>
+
+</html>
