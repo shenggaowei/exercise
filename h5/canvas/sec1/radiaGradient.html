@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radiaGradient</title>
+</head>
+
+<body>
+  <p>
+    创建径向渐变，第一个圆的描述，第二个圆的描述
+    createRadiaGradient(x0,y0,r0,x1,y1,r1);
+
+    // 渐变三步
+    1. 添加渐变线
+    2. 添加断点
+    3. 应用渐变线
+  </p>
+  <div id="canvas-wrap">
+    <canvas id='canvas' style="border: 1px solid #ccc;margin-top: 50px;">
+      不支持
+    </canvas>
+  </div>
+</body>
+<script>
+  let oCanvas = document.querySelector('#canvas');
+  oCanvas.width = 800;
+  oCanvas.height = 600;
+  let context = oCanvas.getContext('2d');
+
+  // 1 添加渐变线
+  let grd = context.createRadialGradient(400, 300, 100, 400, 300, 200);
+
+  // 2 添加断点
+  grd.addColorStop(0, "olive");
+  grd.addColorStop(0.25, "maroon");
+  grd.addColorStop(0.5, "aqua");
+  grd.addColorStop(0.75, "fuchsia");
+  grd.addColorStop(1, "teal");
+
+  // 3 应用渐变
+  context.fillStyle = grd;
+  context.fillRect(100, 100, 600, 400);
+
+</script>
+
+</html>

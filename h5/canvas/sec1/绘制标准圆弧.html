@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>新的画布</title>
+  <style>
+    body {
+      /* background: url("./img.png") repeat; */
+    }
+
+    #canvas {
+      border: 1px solid #aaaaaa;
+      display: block;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="canvas-warp">
+    <canvas id="canvas" style="border: 1px solid #000;">
+      不支持
+    </canvas>
+  </div>
+
+  <script>
+    let canvas = document.getElementById("canvas");
+    canvas.width = 800;
+    canvas.height = 600;
+    let context = canvas.getContext("2d");
+    context.fillStyle = "#FFF";
+    context.beginPath();
+    context.fillRect(0, 0, 800, 600);
+
+    context.beginPath();
+    context.strokeStyle = '#000';
+    // true 为逆时针旋转 false 为顺时针旋转 默认 false。绘制角度沿着时针方向转
+    // pi 是一百八十度
+    context.arc(200, 300, 100, Math.PI, Math.PI * 3 / 2, false);
+    context.stroke();
+  </script>
+</body>
+
+</html>
