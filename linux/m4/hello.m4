@@ -1,0 +1,1 @@
+define(`definenum', define(`num', `99')) definenum num
