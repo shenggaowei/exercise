@@ -8,6 +8,7 @@ interface Todo {
     description: string
 }
 
+// fieldsToUpdate 的类型是 Todo 类型的可选属性
 function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
     return { ...todo, ...fieldsToUpdate };
 }

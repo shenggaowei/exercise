@@ -14,6 +14,6 @@ namespace record {
     const cats: Record<CatName, CatInfo> = {
         miffy: { age: 10, breed: 's' },
         boris: { age: 10, breed: 's' },
-        mordred: { age: 10, breed: 's' }
+        mordred: { age: 10, breed: 's' },
     }
 }
