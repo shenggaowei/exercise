@@ -5,7 +5,7 @@ enum Direction {
     Right
 }
 
-console.log(Direction.Up)
+console.log(Direction.Up);
 
 enum DirectionString {
     Up = "Up",
