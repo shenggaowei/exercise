@@ -1,0 +1,22 @@
+<html>
+<style>
+    #main {
+        width: 100px;
+        height: 50px;
+        border: 1px solid #ccc;
+    }
+</style>
+
+<body>
+    <div id="main" contenteditable="true">
+
+    </div>
+</body>
+<script>
+    var main = document.querySelector("#main")
+    main.oninput = function (e) {
+        console.log(e)
+    }
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "lint",
+  "version": "1.0.0",
+  "description": "lint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "prepare": "husky install",
+    "eslint": "eslint --fix"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "shenggao",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.0",
+    "lint-staged": ">=10",
+    "prettier": "2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "src/**/*.{scss,sass}": [
+      "stylelint --fix"
+    ]
+  },
+  "dependencies": {
+    "glob": "^7.1.7"
+  }
+}
