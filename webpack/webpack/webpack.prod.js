@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: 'bundle.[chunkhash:8].js',
     path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[name].svr.js'
   },
   mode: 'production',
   module: {
@@ -18,13 +19,13 @@ module.exports = {
       // 解析js文件
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       // 解析css文件
-      { test: /\.css$/, use: [ { loader: MiniCssExtractPlugin.loader },{ loader: 'css-loader' }] },
+      { test: /\.css$/, use: [{ loader: MiniCssExtractPlugin.loader }, { loader: 'css-loader' }] },
       // 解析sass文件
-      { test: /\.(scss|sass)$/, use: [ { loader: MiniCssExtractPlugin.loader}, { loader: 'css-loader' }, { loader: 'sass-loader' } ] },
+      { test: /\.(scss|sass)$/, use: [{ loader: MiniCssExtractPlugin.loader }, { loader: 'css-loader' }, { loader: 'sass-loader' }] },
       // 解析字体或者文件
       // { test: /.(jpg|png|gif|jpeg)/, use: [ { loader: 'file-loader' } ]},
       // { test: /.(woff|woff2|eot|ttf|otf)/, use: [ { loader: 'file-loader'} ] },
-      { test: /.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|otf)/, use: [ { loader: 'file-loader', options: { name: 'img/[name]_[hash:8].[ext]' } } ]}, // contenthash
+      { test: /.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|otf)/, use: [{ loader: 'file-loader', options: { name: 'img/[name]_[hash:8].[ext]' } }] }, // contenthash
     ]
   },
   plugins: [

@@ -1,0 +1,14 @@
+{
+  "name": "transform",
+  "version": "1.0.0",
+  "description": "前端代码编译转换",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "shenggao",
+  "license": "ISC",
+  "dependencies": {
+    "esprima": "^4.0.1"
+  }
+}

@@ -5,27 +5,28 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[name].svr.js'
   },
   mode: 'development',
   devServer: {
-      contentBase: path.join(__dirname, "dist"),
-      hot: true,
-      port: 9000
+    contentBase: path.join(__dirname, "dist"),
+    hot: true,
+    port: 9000
   },
   module: {
     rules: [
       // 解析js文件
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.js$/, exclude: /node_modules/, use: [{ loader: "babel-loader" }] },
       // 解析css文件
-      { test: /\.css$/, use: [ { loader: 'style-loader' },{ loader: 'css-loader' }] },
+      { test: /\.css$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }] },
       // 解析sass文件
-      { test: /\.(scss|sass)$/, use: [ { loader: 'style-loader'}, { loader: 'css-loader' }, { loader: 'sass-loader' } ] },
+      { test: /\.(scss|sass)$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }] },
       // 解析字体或者文件
       // { test: /.(jpg|png|gif|jpeg)/, use: [ { loader: 'file-loader' } ]},
       // { test: /.(woff|woff2|eot|ttf|otf)/, use: [ { loader: 'file-loader'} ] },
-      { test: /.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|otf)/, use: [ { loader: 'url-loader', options: { limit:  10240 } } ]},
+      { test: /.(jpg|png|gif|jpeg|woff|woff2|eot|ttf|otf)/, use: [{ loader: 'url-loader', options: { limit: 10240 } }] },
     ]
   },
   plugins: [
