@@ -7,13 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        p {
-            width: 100px;
-            background: red;
+        .container {
+          width: 500px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+        }
+        .left {
+          width: 74px;
+          height: 74px;
+          background-color: orange;
+        }
+        
+        .right {
+          flex: 1;
+          background-color: purple;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .child2 {
+          background-color: yellow;
+        }
+
+        .child1 {
             display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 1;
             overflow: hidden;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
         }
     </style>
 </head>
@@ -21,9 +44,11 @@
 <body>
 
 </body>
-<p>
-    你还快点放假，宽带 缴费卡看是否健康收款<br />方监考老师吉林省快点放假SDK来看
-    的是福建省宽带缴费卡拉动的看法健康的实际付款了
-</p>
-
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+        <div class="child1">sdjfklsjdflksjflksjflksjflksjfkjslkfjslk;afjkals;djfl;askdjflskajfdlksjflksjfahha</div>
+        <div class="child2">xixixi</div>
+    </div>
+  </div>
 </html>

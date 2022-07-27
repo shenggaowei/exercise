@@ -57,11 +57,11 @@
 (() => {
     const handler = {
         get: function (target, key, receiver) {
-            console.log(this === handler)
+            console.log('get',this === handler)
             return 'Hello, ' + key;
         },
         set: function (target, key, value) {
-            console.log(this === handler)
+            console.log('set',this === handler)
             target[key] = value;
             return true
         }
